@@ -1,92 +1,96 @@
-# Taps
-tap 'caskroom/cask'
-tap 'caskroom/fonts'
-tap 'caskroom/versions'
-tap 'homebrew/bundle'
-tap 'homebrew/dupes'
-tap 'homebrew/php'
-
-# Install ZSH
-brew 'zsh'
-brew 'zsh-completions'
-
-# Install GNU core utilities (those that come with macOS are outdated)
-brew 'coreutils'
-
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-brew 'findutils'
-
-# Install Bash 4
-brew 'bash'
-
-# Install more recent versions of some macOS tools
-brew 'homebrew/dupes/grep'
-
-# Install Binaries
-brew 'awscli'
-brew 'git'
-brew 'hub'
-brew 'tree'
-brew 'mackup'
-brew 'mas'
-brew 'node'
-brew 'trash'
-brew 'wget'
-
-# Development
-brew 'php71'
-brew 'php71-intl'
-brew 'php71-imagick'
-brew 'mariadb'
-
-# Apps
-cask 'aerial'
-cask 'alfred'
-cask 'caffeine'
-cask 'docker'
-cask 'firefox'
-cask 'google-backup-and-sync'
-cask 'google-chrome'
-cask 'gpgtools'
-cask 'insomnia'
-cask 'iterm2'
-cask 'java'
-cask 'mysqlworkbench'
-cask 'now'
-cask 'phpstorm'
-cask 'quip'
-cask 'sequel-pro'
-cask 'shuttle'
-cask 'slack'
-cask 'sublime-text'
-cask 'torbrowser'
-cask 'tower'
-cask 'transmit'
-cask 'vagrant'
-cask 'virtualbox'
-cask 'virtualbox-extension-pack'
-cask 'vlc'
-
-# Quicklook
-cask 'qlcolorcode'
-cask 'qlmarkdown'
-cask 'quicklook-json'
-cask 'quicklook-csv'
-cask 'qlstephen'
-
-# Fonts
-cask 'font-source-code-pro-for-powerline'
-cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
-
-# Install Mac App Store apps
-mas '1Password', id: 443987910
-mas 'Byword', id: 420212497
-mas 'Deckset', id: 847496013
-mas 'Gapplin', id: 768053424
-mas 'Giphy Capture', id: 668208984
-mas 'Paw', id: 584653203
-mas 'Sip', id: 507257563
-mas 'Sketch', id: 402476602
-mas 'Tweetbot', id: 557168941
+tap "heroku/brew"
+tap "blackfireio/blackfire"
+tap "homebrew/core"
+tap "homebrew/php"
+tap "homebrew/bundle"
+tap "homebrew/services"
+tap "caskroom/drivers"
+tap "caskroom/fonts"
+tap "caskroom/cask"
+brew "ansible"
+brew "bash"
+brew "coreutils"
+brew "curl"
+brew "dnsmasq", restart_service: true
+brew "findutils"
+brew "git"
+brew "gnu-sed", args: ["with-default-names"]
+brew "pinentry"
+brew "gnupg"
+brew "go"
+brew "grep"
+brew "python3"
+brew "httpie"
+brew "hub"
+brew "imagemagick", args: ["with-webp"]
+brew "mackup"
+brew "mas"
+brew "mysql"
+brew "node"
+brew "openssh"
+brew "phantomjs"
+brew "rbenv"
+brew "rethinkdb", restart_service: true
+brew "rsync"
+brew "siege"
+brew "ssh-copy-id"
+brew "tidy-html5"
+brew "trash"
+brew "tree"
+brew "vim", args: ["with-override-system-vi"]
+brew "wget"
+brew "yarn"
+brew "zsh"
+brew "zsh-completions"
+brew "blackfireio/blackfire/blackfire-agent"
+brew "blackfireio/blackfire/blackfire-php71", args: ["without-homebrew-php"]
+brew "heroku/brew/heroku"
+brew "homebrew/php/composer"
+brew "homebrew/php/php71"
+brew "homebrew/php/php-code-sniffer"
+brew "homebrew/php/php-cs-fixer"
+brew "homebrew/php/phplint"
+cask "1password"
+cask "adobe-creative-cloud"
+cask "alfred"
+cask "appzapper"
+cask "caffeine"
+cask "docker"
+cask "firefox"
+cask "fontbase"
+cask "functionflip"
+cask "google-chrome"
+cask "gpg-suite"
+cask "harvest"
+cask "insomnia"
+cask "iterm2"
+cask "java"
+cask "keybase"
+cask "sequel-pro"
+cask "shuttle"
+cask "skitch"
+cask "slack"
+cask "slate"
+cask "soundflower"
+cask "sourcetree"
+cask "spotify"
+cask "superduper"
+cask "the-unarchiver"
+cask "transmit"
+cask "vagrant"
+cask "virtualbox"
+cask "vlc"
+cask "caskroom/drivers/synology-cloud-station-drive"
+cask "caskroom/fonts/font-source-code-pro"
+cask "caskroom/fonts/font-source-sans-pro"
+cask "caskroom/fonts/font-source-serif-pro"
+mas "Better Rename 9", id: 414209656
+mas "Gapplin", id: 768053424
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Patterns", id: 429449079
+mas "Spark", id: 1176895641
+mas "TweetDeck", id: 485812721
+mas "Xcode", id: 497799835
